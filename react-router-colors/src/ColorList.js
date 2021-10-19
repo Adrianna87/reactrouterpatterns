@@ -5,7 +5,7 @@ function ColorList({ colors }) {
   return (
     <div>
       <h1>Welcome to The Color Factory</h1>
-      <p>Add a color</p>
+      <p><Link exact to="/colors/new">Add a color</Link></p>
       <p>Here are the current colors:</p>
       <ul>
         {colors.map(color => (
@@ -17,16 +17,14 @@ function ColorList({ colors }) {
     </div>
   );
 }
-
-ColorList.defaultProps = {
-  colors: [
-    "Red",
-    "Orange",
-    "Yellow",
-    "Green",
-    "Blue",
-    "Violet"
-  ]
-};
+export const colors = [
+  "Red",
+  "Orange",
+  "Yellow",
+  "Green",
+  "Blue",
+  "Violet"
+]
+ColorList.defaultProps = { colors };
 
 export default ColorList;
