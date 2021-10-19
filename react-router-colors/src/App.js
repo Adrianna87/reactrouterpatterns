@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Color Facctory
+        Color Factory
       </header>
       <Routes />
     </div>

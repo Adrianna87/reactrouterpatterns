@@ -8,7 +8,7 @@ function Routes() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/colors"><ColorList /></Route>
-        <Route exact path="/colors/:color"><ColorList /></Route>
+        <Route exact path="/colors/:color"><Color /></Route>
         <Redirect to="/colors" />
       </Switch>
     </BrowserRouter>

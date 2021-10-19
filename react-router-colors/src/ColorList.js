@@ -5,7 +5,8 @@ function ColorList({ colors }) {
   return (
     <div>
       <h1>Welcome to The Color Factory</h1>
-      <p>Here are some colors</p>
+      <p>Add a color</p>
+      <p>Here are the current colors:</p>
       <ul>
         {colors.map(color => (
           <li key={color}>
